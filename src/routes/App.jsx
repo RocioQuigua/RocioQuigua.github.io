@@ -15,7 +15,6 @@ import { NotFound } from "../pages/NotFound";
 
 import "../styles/global.scss";
 
-
 const App = () => {
   return (
     <BrowserRouter>
