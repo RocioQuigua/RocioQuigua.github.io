@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/ProductItem.scss';
 
 export const ProductItem = () => {
   return (
-      <div class="product-card">
+      <div class="productItem">
         <img src="https://images.pexels.com/photos/3759740/pexels-photo-3759740.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="" class="product-img" />
         <div class="product-info">
           <div>

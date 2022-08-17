@@ -1,11 +1,12 @@
 import React from 'react';
+import { OrderItem } from '../components/OrderItem';
 
 export const Checkout = () => {
   return (
-    <div className='Checkout'>
-      <div className='Checkout-container'> 
+    <div className='checkout'>
+      <div className='checkout-container'> 
         <h1 className='title'>My Order</h1>
-        <div className='Checkout-content'>
+        <div className='checkout-content'>
         <div className="order">
           <p>
             <span>26.11.2021</span>
@@ -14,6 +15,7 @@ export const Checkout = () => {
           <p>$600.000</p>
         </div>
         </div>
+        <OrderItem />
       </div>
     </div>
   );

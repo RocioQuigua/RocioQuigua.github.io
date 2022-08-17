@@ -1,8 +1,9 @@
 import React from "react";
+import '../styles/OrderItem.scss';
 
-export const OrdenItem = () => {
+export const OrderItem = () => {
   return (
-    <div className="shopping-cart">
+    <div className="orderItem">
       <figure>
         <img
           src="https://images.pexels.com/photos/8526787/pexels-photo-8526787.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
