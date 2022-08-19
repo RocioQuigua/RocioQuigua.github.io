@@ -2,16 +2,16 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Layout } from "../containers/Layout";
-import { Checkout } from "../pages/Checkout";
-import { CreateAccount } from "../pages/CreateAccount";
-import { Home } from "../pages/Home";
-import { Login } from "../pages/Login";
-import { MyAccount } from "../pages/MyAccount";
-import { NewPassword } from "../pages/NewPassword";
-import { Orders } from "../pages/Orders";
-import { RecoveryPassword } from "../pages/RecoveryPassword";
-import { SendEmail } from "../pages/SendEmail";
-import { NotFound } from "../pages/NotFound";
+import { Checkout } from "../pages/Checkout/Checkout";
+import { CreateAccount } from "../pages/CreateAccount/CreateAccount";
+import { Home } from "../pages/Home/Home";
+import { Login } from "../pages/Login/Login";
+import { MyAccount } from "../pages/MyAccount/MyAccount";
+import { NewPassword } from "../pages/NewPassword/NewPassword";
+import { Orders } from "../pages/Orders/Orders";
+import { RecoveryPassword } from "../pages/RecoveryPassword/RecoveryPassword";
+import { SendEmail } from "../pages/SendEmail/SendEmail";
+import { NotFound } from "../pages/NotFound/NotFound";
 
 import "../styles/global.scss";
 
