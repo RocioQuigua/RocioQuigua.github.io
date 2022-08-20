@@ -5,8 +5,8 @@ export const Header = () => {
   return (
     <nav className="navbar">
       <img src="images/icon_menu.svg" alt="Menú" class="navbar__menu" />
-      <div class="navbar__left">
-        <img src="logos/logo_yard_sale.svg" alt="Logo" class="navbar__logo" />
+      <div className="navbar__left">
+        <img src="logos/logo_yard_sale.svg" alt="Logo" className="navbar__logo" />
         <ul>
           <li>
             <a href="/">All</a>
@@ -25,10 +25,10 @@ export const Header = () => {
           </li>
         </ul>
       </div>
-      <div class="navbar__right">
+      <div className="navbar__right">
         <ul>
-          <li class="navbar__email">rocioquigua3@gmail.com</li>
-          <li class="navbar__shopping-cart">
+          <li className="navbar__email">rocioquigua3@gmail.com</li>
+          <li className="navbar__shopping-cart">
             <img src="images/icon_shopping_cart.svg" alt="Shopping cart" />
             <div>2</div>
           </li>
