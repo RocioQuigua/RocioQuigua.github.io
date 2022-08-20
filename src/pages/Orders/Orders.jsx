@@ -3,10 +3,10 @@ import { OrderItem } from "../../components/OrderItem/OrderItem";
 
 export const Orders = () => {
   return (
-    <div className="Orders">
-      <div className="Orders-container"> 
-        <h1 className="title">My orders</h1>
-        <div className="Orders-content">
+    <div className="orders">
+      <div className="orders__container"> 
+        <h1 className="orders__title">My orders</h1>
+        <div className="orders__content">
           <OrderItem />
         </div>
       </div>
