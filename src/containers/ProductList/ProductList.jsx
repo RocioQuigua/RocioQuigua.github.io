@@ -4,7 +4,7 @@ import './ProductList.scss';
 
 export const ProductList = () => {
   return (
-    <section className='main-container'>
+    <section className='mainContainer'>
       <div className='productList'>
         <ProductItem />
       </div>

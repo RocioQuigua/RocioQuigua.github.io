@@ -1,23 +1,23 @@
 import React from 'react';
-import { OrderItem } from '../components/OrderItem';
+import { OrderItem } from '../../components/OrderItem/OrderItem';
 import './MyOrder.scss';
 
 export const MyOrder = () => {
   return (
-    <aside class="myOrder">
-    <div class="title-container">
-      <img src="./icons/flechita.svg" alt="arrow" />
-      <p class="title">My order</p>
+    <aside className="myOrder">
+    <div className="myOrder__container">
+      <img src="images/flechita.svg" alt="flechita" />
+      <p className="myOrder__title">My order</p>
     </div>
-    <div class="my-order-content">
+    <div className="myOrder__content">
       <OrderItem />
-      <div className="order">
+      <div className="myOrder__orders">
 					<p>
 						<span>Total</span>
 					</p>
 					<p>$560.00</p>
 				</div>
-				<button className="primary-button">
+				<button className="myOrder__primary-button">
 					Checkout
 				</button>
 			</div>
