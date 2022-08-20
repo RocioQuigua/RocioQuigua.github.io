@@ -10,28 +10,26 @@
     grid-template-rows: auto 1fr auto;
     width: 300px;
   }
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
   &__logo {
     width: 150px;
     margin-bottom: 48px;
     justify-self: center;
     display: none;
   }
-  &__title {
-    font-size: var(--lg);
-    margin-bottom: 12px;
-    text-align: center;
-  }
-  &__subtitle {
-    color: var(--very-light-pink);
-    font-size: var(--md);
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 32px;
-    text-align: center;
-  }
   &__form {
     display: flex;
     flex-direction: column;
+    a{
+      color: var(--hospital-green);
+      font-size: var(--sm);
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 52px;
+    }
   }
   &__label {
     font-size: var(--sm);
@@ -42,12 +40,14 @@
     background-color: var(--text-input-field);
     border: none;
     border-radius: 8px;
-    width: 96%;
     height: 30px;
     font-size: var(--md);
     padding: 6px;
     margin-bottom: 12px;
-    margin-top: 5px;
+    &--email {
+      margin-bottom: 22px;
+      margin-top: 10px;
+    }
   }
   &__button-primary {
     background-color: var(--hospital-green);
@@ -63,6 +63,17 @@
       margin-top: 14px;
       margin-bottom: 30px;
     }
+  }
+  &__button-secundary {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
   }
 }
 @media (max-width: 640px) {
