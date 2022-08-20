@@ -1,6 +1,6 @@
 @import '../../styles/vars';
 
-.ProductItem {
+.productItem {
 	width: 240px;
   img {
     width: 240px;
@@ -37,7 +37,7 @@
   }
 }
 @media (max-width: 640px) {
-  .ProductItem {
+  .productItem {
 		grid-template-columns: repeat(auto-fill, 140px);
 		width: 140px;
     img {

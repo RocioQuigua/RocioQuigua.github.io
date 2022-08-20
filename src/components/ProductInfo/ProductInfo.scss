@@ -1,6 +1,6 @@
 @import '../../styles/vars';
 
-.product-info {
+.productInfo {
   margin: 24px 24px 0 24px;
   p:nth-child(1) {
     font-weight: bold;
@@ -30,7 +30,7 @@
     cursor: pointer;
     font-size: var(--md);
     font-weight: bold;
-    &__add-to-cart-button {
+    &--add-cart {
       display: flex;
       align-items: center;
       justify-content: center;
