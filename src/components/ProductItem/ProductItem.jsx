@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+//import addToCart from 'images/bt_add_to_cart';
 import './ProductItem.scss';
 
-export const ProductItem = () => {
+export const ProductItem = ({product}) => {
+  const [cart, setCart] = useState([]);
+
+  const handleClick = () => {
+    setCart([]);
+  }
+
   return (
       <div className="productItem">
-        <img src="https://images.pexels.com/photos/3759740/pexels-photo-3759740.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="" />
+        <img src={product.images[0]} alt={product.title} />
         <div className="productItem__info">
           <div>
-            <p>$150,00</p>
-            <p>Motorcycle</p>
+            <p>${product.price}</p>
+            <p>{product.title}</p>
           </div>
-          <figure>
-            <img src="images/bt_add_to_cart.svg" alt="" />
+          <figure onClick={handleClick}>
+            <img src='images/bt_add_to_cart' alt='' />
           </figure>
         </div>
       </div>
