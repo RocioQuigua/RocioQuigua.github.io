@@ -12,11 +12,15 @@ import { Orders } from "../pages/Orders/Orders";
 import { RecoveryPassword } from "../pages/RecoveryPassword/RecoveryPassword";
 import { SendEmail } from "../pages/SendEmail/SendEmail";
 import { NotFound } from "../pages/NotFound/NotFound";
+import { AppContext } from "../context/AppContext";
+import { useInitialState } from "../hooks/useInitialState";
 
 import "../styles/global.scss";
 
 const App = () => {
+  const initialState = useInitialState();
   return (
+    <AppContext.Provider value={initialState}>    
     <BrowserRouter>
       <Layout>
         <Routes>
@@ -33,6 +37,7 @@ const App = () => {
         </Routes>
       </Layout>
     </BrowserRouter>
+    </AppContext.Provider>
   );
 };
 
