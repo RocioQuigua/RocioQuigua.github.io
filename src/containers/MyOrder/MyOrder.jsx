@@ -23,9 +23,9 @@ export const MyOrder = () => {
     <div className="myOrder__content">
       {state.cart.map((product, index) => (
       <OrderItem 
-      indexValue={index}
-      product={product} 
-      key={index}
+      product={product}
+      index={index}
+      key={`orderItem-${product.id}${index.id}`}
       />
       ))}
       <div className="myOrder__orders">
