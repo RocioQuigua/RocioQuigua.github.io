@@ -10,14 +10,14 @@ export const useInitialState = () => {
   const addToCart = (payload) => {
     setState({
       ...state,
-      cart: [...state.cart, payload],
+      cart: [...state.cart, {...payload, idCart: state.cart.length + 1}],
     });
   };
 
-  const removeFromCart = (indexValue) => {
+  const removeFromCart = (payload) => {
     setState({
       ...state,
-      cart: state.cart.filter((_, index) => index !== indexValue),
+      cart: state.cart.filter(items => items.idCart !== payload.idCart ),
     });
   };
 
