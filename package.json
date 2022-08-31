@@ -2,7 +2,7 @@
   "name": "example-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/RocioQuigua/example-app",
+  "homepage": "https://RocioQuigua.github.io/example-app",
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.18.10",
     "@testing-library/jest-dom": "^5.16.4",
@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeplloy": "npm run build",
+    "predeploy": "npm run build",
     "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
