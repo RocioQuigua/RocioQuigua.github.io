@@ -6,8 +6,8 @@ import './OrderItem.scss';
 export const OrderItem = ({ product }) => {
   const { removeFromCart } = useContext(AppContext);
 
-  const handleRemove = index => {
-    removeFromCart(index);
+  const handleRemove = product => {
+    removeFromCart(product);
   }
 
   return (
